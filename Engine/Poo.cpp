@@ -12,11 +12,11 @@ void Poo::Init( float in_x,float in_y,float in_vx,float in_vy )
 	initialized = true;
 }
 
-void Poo::Update()
+void Poo::Update(float dt)
 {
 	assert( initialized == true );
-	x += vx; // calculaton of number pixels per frame
-	y += vy;
+	x += vx * dt; // premik koordnate(xy) za stevilo pikslov v casu dt
+	y += vy * dt;
 
 	const float right = x + width;
 	if( x < 0 )
