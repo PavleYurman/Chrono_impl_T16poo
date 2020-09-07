@@ -15,7 +15,7 @@ void Poo::Init( float in_x,float in_y,float in_vx,float in_vy )
 void Poo::Update()
 {
 	assert( initialized == true );
-	x += vx;
+	x += vx; // calculaton of number pixels per frame
 	y += vy;
 
 	const float right = x + width;

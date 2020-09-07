@@ -13,7 +13,7 @@ public:
 private:
 	float x;
 	float y;
-	float vx;
+	float vx; // hotrost je definirana kot stevilo pixlov/1 slicico
 	float vy;
 	static constexpr float width = 24;
 	static constexpr float height = 24;
